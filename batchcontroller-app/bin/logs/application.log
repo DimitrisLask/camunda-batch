@@ -1,0 +1,18 @@
+2020-01-17 20:39:25,924 [WARN] from play.db.DBModule in main - Configuration not found for database: No configuration setting found for key 'db'
+2020-01-17 20:39:34,065 [INFO] from BATCH CONTROLLER in main - Successfully connected to database
+2020-01-17 20:39:34,362 [INFO] from BATCH CONTROLLER in main - Message Receiver successfully started. Waiting for messages...
+2020-01-17 20:39:34,955 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2020-01-17 20:39:36,393 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2020-01-17 21:36:45,013 [WARN] from play.db.DBModule in main - Configuration not found for database: No configuration setting found for key 'db'
+2020-01-17 21:36:54,221 [INFO] from BATCH CONTROLLER in main - Successfully connected to database
+2020-01-17 21:36:54,362 [INFO] from BATCH CONTROLLER in main - Message Receiver successfully started. Waiting for messages...
+2020-01-17 21:36:54,425 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2020-01-17 21:36:56,875 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2020-01-19 21:23:12,957 [WARN] from play.db.DBModule in main - Configuration not found for database: No configuration setting found for key 'db'
+2020-01-19 21:23:30,292 [INFO] from BATCH CONTROLLER in main - Successfully connected to database
+2020-01-19 21:23:30,653 [INFO] from BATCH CONTROLLER in main - Message Receiver successfully started. Waiting for messages...
+2020-01-19 21:23:30,702 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2020-01-19 21:23:34,435 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2020-01-19 21:26:33,515 [ERROR] from BATCH CONTROLLER in pool-1-thread-7 - java.lang.NullPointerException
+2020-01-19 21:26:33,516 [ERROR] from BATCH CONTROLLER in pool-1-thread-7 - java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+2020-01-19 21:26:33,531 [INFO] from BATCH CONTROLLER in pool-1-thread-7 - New batch with id: stock-evaluation:1/Calculate Value:dim-1 started

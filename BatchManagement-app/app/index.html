@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+
+    <!-- AUTHOR: Dimitrios Laskaratos, MSc.-->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Batch Management Tool</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+
+    <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--<a class="navbar-brand" href="#"><img src="img\camunda.60.png" height="25" width="25"></a>-->
+    <a class="navbar-brand" href="#">Batch Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="img\home.png" height="25" width="25">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Admin</a>
+                    <a class="dropdown-item" href="#">Cockpit</a>
+                    <a class="dropdown-item" href="#">Tasklist</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="nav-about" aria-selected="false"
+                       style="color: black;
+                              background-color: white;
+                              border-color: white;
+                              text-align: center">
+                        About</a>
+                    <a class="nav-item nav-link" id="nav-examples-tab" data-toggle="tab" href="#examples" role="tab" aria-controls="nav-examples" aria-selected="false"
+                       style="color: black;
+                              background-color: white;
+                              border-color: white;
+                              text-align: center">
+                        Examples</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="options" style="background-color: firebrick;">
+            <div class="container">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="tab" href="#models" role="tab" aria-controls="v-pills-home" aria-selected="true" style="color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545; text-align: center">
+                        Models
+                    </a>
+                    <br>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="tab" href="#connectors" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545; text-align: center">
+                        Instances
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="background-color: bisque;">
+            <div class="container tab-content" style="height: 100%;">
+
+
+                <div role="tabpanel" class="tab-pane active" id="models" style="height: 100%;">
+                    <div class="container" style="height: 100%;">
+                        <div class="row" style="height: 5%;">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height: 100%;">
+                                <h4>Models</h4>
+                            </div>
+                        </div>
+                        <div class="row" id="list-row" style="height: 35%;">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height: 100%;">
+                                    <div class="scroll-area list-group" id="batch-model-list">
+                                    </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row" id="delete" style="height: 5%;">
+                            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" >
+                                <span class="d-inline-block float-right" tabindex="0" data-toggle="tooltip" title="Clear property fields">
+                                    <button type="button" class="btn btn-danger" onclick="clearPropertyFields()">Clear</button>
+                                </span>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" >
+                                <span class="d-inline-block float-right" tabindex="0" data-toggle="tooltip" title="Delete selected model">
+                                    <button type="button" class="btn btn-danger" onclick="deleteModel()">Delete</button>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row" id="controls-row" >
+                            <div class="container">
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <form class="was-validated">
+                                            <div class="mb-3">
+                                                <label for="name">Model Name</label>
+                                                <input class="form-control is-invalid model-property-text" id="name" placeholder="Required" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <form class="was-validated">
+                                            <div class="mb-3">
+                                                <label for="maxSize">Max Batch Size</label>
+                                                <input class="form-control is-invalid model-property-text" id="maxSize" placeholder="Required" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="rules">Activation Rules</label>
+                                        <div class="form-row" id="rules">
+                                            <div class="form-group col-md-3">
+                                                <form class="was-validated">
+												<div class="mb-1">
+                                                    <input class="form-control model-property-text" id="rule1" required>
+                                                </div>
+												</form>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <form class="was-validated">
+												<div class="mb-1">
+												    <input class="form-control model-property-text" id="rule2" required>
+                                                </div>
+												</form>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <div class="mb-1">
+                                                    <form class="was-validated">
+													<select id="rule3" class="form-control custom-select" required>
+                                                        <option selected></option>
+                                                        <option id="hours">HOURS</option>
+                                                        <option id="minutes">MINUTES</option>
+                                                        <option id="seconds">SECONDS</option>
+                                                    </select>
+													</form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="order">Execution Order</label>
+                                        <select id="order" class="form-control">
+                                            <option selected>Select Execution Order</option>
+                                            <option id="parallel">Parallel</option>
+                                            <option id="sequential">Sequential</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <form class="was-validated">
+                                            <label for="processList">Process</label>
+                                            <select id="processList" class="form-control custom-select"  onchange="selectedProcess(this.options[this.selectedIndex].id)" required>
+                                                <option value="">Select process</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <form class="was-validated">
+                                            <label for="activityList">Activity</label>
+                                            <select id="activityList" class="form-control custom-select" onchange="selectedActivity(this.options[this.selectedIndex].id)" required>
+                                                <option value="">Select activity</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <form class="was-validated">
+                                            <div class="mb-3">
+                                                <label for="attributes">Grouping Attributes</label>
+                                                <input class="form-control is-invalid model-property-text" id="attributes" placeholder="Required" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <span class="d-inline-block float-right" tabindex="0" data-toggle="tooltip" title="Modify or create a new model">
+                                             <button id="create" type="button" class="btn btn-danger" onclick="save()">Create or Modify</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div role="tabpanel" class="tab-pane" id="connectors" style="height: 100%;">
+                    <div class="container" style="height: 100%;">
+                        <div class="row" style="height: 5%;">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height: 100%;">
+                                <h4>Blocked Instances</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="scroll-area list-group">
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Id</div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Process</div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Activity</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="height: 40%;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height: 100%;">
+                                    <div class="scroll-area list-group" id="blockedProcessList">
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!--<div class="row" style="height: 5%;">
+                            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" >
+                                <button type="button" class="btn btn-danger float-right">Create</button>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" >
+                                <button type="button" class="btn btn-danger float-right">Delete</button>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+
+
+                <div role="tabpanel" class="tab-pane" id="about">This is the tab for about</div>
+                <div role="tabpanel" class="tab-pane" id="examples">This is the tab for the examples</div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="Controller.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+</body>
+</html>

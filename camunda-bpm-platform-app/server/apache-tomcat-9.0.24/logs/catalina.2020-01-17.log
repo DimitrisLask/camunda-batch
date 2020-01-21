@@ -1,0 +1,61 @@
+17-Jan-2020 20:39:55.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.24
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 14 2019 21:16:42 UTC
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.24.0
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_231
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24
+17-Jan-2020 20:39:55.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24\conf\logging.properties
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:MaxPermSize=256m
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:PermSize=256m
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24\temp
+17-Jan-2020 20:39:55.908 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jre1.8.0_77\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\sbt\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MATLAB\R2018a\runtime\win64;C:\Program Files\MATLAB\R2018a\bin;C:\MinGW\bin;C:\Program Files\apache-maven-3.6.2\bin;C:\Users\Vortex\.dnx\bin;C:\Users\Vortex\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Vortex\AppData\Local\Programs\Python\Python35-32\;C:\Program Files\Docker Toolbox;C:\Program Files\Git\bin;C:\Program Files\Git\cmd;C:\Users\Vortex\Anaconda3;C:\Users\Vortex\Anaconda3\Scripts\;C:\Users\Vortex\AppData\Roaming\npm;C:\Program Files\apache-maven-3.6.2\bin;.]
+17-Jan-2020 20:39:58.139 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Jan-2020 20:39:58.831 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2020 20:39:58.863 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [4,916] milliseconds
+17-Jan-2020 20:40:00.358 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-08046 Found camunda bpm platform configuration in CATALINA_BASE/CATALINA_HOME conf directory [C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24\conf\bpm-platform.xml] at 'file:/C:/Users/Vortex/Desktop/tomcat/server/apache-tomcat-9.0.24/conf/bpm-platform.xml'
+17-Jan-2020 20:40:01.764 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-12003 Plugin 'ProcessApplicationEventListenerPlugin' activated on process engine 'default'
+17-Jan-2020 20:40:01.779 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-12003 Plugin 'SpinProcessEnginePlugin' activated on process engine 'default'
+17-Jan-2020 20:40:01.789 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+17-Jan-2020 20:40:02.604 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+17-Jan-2020 20:40:02.846 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+17-Jan-2020 20:40:02.847 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+17-Jan-2020 20:40:02.848 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-12003 Plugin 'ConnectProcessEnginePlugin' activated on process engine 'default'
+17-Jan-2020 20:40:04.270 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+17-Jan-2020 20:40:04.276 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+17-Jan-2020 20:40:13.096 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-00001 Process Engine default created.
+17-Jan-2020 20:40:13.099 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.impl.jobexecutor.RuntimeContainerJobExecutor].
+17-Jan-2020 20:40:13.104 INFO [Thread-6] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-14018 JobExecutor[org.camunda.bpm.engine.impl.jobexecutor.RuntimeContainerJobExecutor] starting to acquire jobs
+17-Jan-2020 20:40:15.161 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-08048 Camunda BPM platform sucessfully started at 'Apache Tomcat/9.0.24'.
+17-Jan-2020 20:40:15.358 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jan-2020 20:40:15.360 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.24]
+17-Jan-2020 20:40:15.553 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24\webapps\BatchActivity.war]
+17-Jan-2020 20:40:26.472 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-07015 Detected @ProcessApplication class 'com.camunda.batch.BatchActivity.CamundaBpmProcessApplication'
+17-Jan-2020 20:40:26.651 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Jan-2020 20:40:26.765 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-08024 Found processes.xml file at file:/C:/Users/Vortex/Desktop/tomcat/server/apache-tomcat-9.0.24/webapps/BatchActivity/WEB-INF/classes/META-INF/processes.xml
+17-Jan-2020 20:40:26.833 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-08023 Deployment summary for process archive 'BatchActivity': 
+
+        process.bpmn
+
+17-Jan-2020 20:40:26.970 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-07021 ProcessApplication 'BatchActivity' registered for DB deployments [629a1595-28dd-11ea-9d5a-d4c9ef713636]. Will execute process definitions 
+
+        stock-evaluation[version: 1, id: stock-evaluation:1:62a31647-28dd-11ea-9d5a-d4c9ef713636]
+Deployment does not provide any case definitions.
+17-Jan-2020 20:40:26.986 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+17-Jan-2020 20:40:26.990 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+17-Jan-2020 20:40:27.001 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+17-Jan-2020 20:40:27.002 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+17-Jan-2020 20:40:27.005 INFO [main] org.camunda.commons.logging.BaseLogger.logInfo ENGINE-08050 Process application BatchActivity successfully deployed
+17-Jan-2020 20:40:27.059 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24\webapps\BatchActivity.war] has finished in [11,505] ms
+17-Jan-2020 20:40:27.099 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Vortex\Desktop\tomcat\server\apache-tomcat-9.0.24\webapps\UserTaskBatch.war]

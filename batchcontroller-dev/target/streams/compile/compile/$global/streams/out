@@ -1,0 +1,8 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vortex\Desktop\Dev\batchcontroller\app\delegate\definitions\CalculateValue.java:18:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Random[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class delegate.definitions.CalculateValue[0m
+[0m[[0m[31merror[0m] [0m[0m        Random random = new Random();[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vortex\Desktop\Dev\batchcontroller\app\delegate\definitions\CalculateValue.java:18:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Random[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class delegate.definitions.CalculateValue[0m
+[0m[[0m[31merror[0m] [0m[0m        Random random = new Random();[0m

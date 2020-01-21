@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: camunda BPM - example - invoice
+Implementation-Version: 7.12.0-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: Vortex
+Implementation-Vendor-Id: org.camunda.bpm.example
+Created-By: Apache Maven 3.6.2
+Build-Jdk: 1.8.0_181
+Implementation-Vendor: camunda services GmbH
+
