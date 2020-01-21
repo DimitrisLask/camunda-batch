@@ -1,0 +1,3 @@
+[submodule "camunda-bpm-platform-dev"]
+	path = camunda-bpm-platform-dev
+	url = ./camunda-bpm-platform-dev
