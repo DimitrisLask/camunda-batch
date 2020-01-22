@@ -23,7 +23,7 @@ from Camunda Github repository. The source code also contains the batch modifica
 
 2) Before starting up the system make sure to have a MySQL instance and RabbitMQ installed locally.
 
-3) MySQL needs to have a database called "test" and must ba accessed using "root" and "root" as username and password. 
+3) MySQL needs to have a database called "test" and must be accessed using "root" and "root" as username and password. 
 This database must contain one table called "models". You can create it using the following query:
 
 CREATE TABLE `models`(
